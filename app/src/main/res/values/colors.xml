@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="text_color_A">#FFF</color>
+    <color name="text_color_B">#FFF</color>
+    <color name="text_color_C">#FFF</color>
+    <color name="text_color_D">#FFF</color>
+
+    <color name="checkbox_color_default">#FFF</color>
+
+    <color name="footer_menu_color_default">#000</color>
+
+</resources>
