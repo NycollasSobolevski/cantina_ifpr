@@ -17,4 +17,8 @@
     <string name="coca1l">R$8,00 - Coca Cola 1L</string>
     <string name="cafe25">R$2,50 - Café Puro 25ml</string>
     <string name="cafe50">R$7,50 - Café Gelado 200ml</string>
+
+    <string name="frete">Frete</string>
+    <string name="frete_option_retirar">Retirar</string>
+    <string name="frete_option_entrega">Entrega (R$20,00)</string>
 </resources>

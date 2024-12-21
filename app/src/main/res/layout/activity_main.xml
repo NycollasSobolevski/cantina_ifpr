@@ -8,6 +8,36 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
+    <RadioGroup
+        android:id="@+id/cbContainer"
+        android:layout_width="386dp"
+        android:layout_height="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBebidas3">
+
+        <RadioButton
+            android:id="@+id/rbRetirar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color_A"
+            android:checked="true"
+            android:text="@string/frete_option_retirar"
+            android:textColor="@color/text_color_A" />
+
+        <RadioButton
+            android:id="@+id/rbEntrega"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="80dp"
+            android:buttonTint="@color/checkbox_color_default"
+            android:checked="@bool/DefaultBoleanFalse"
+            android:text="@string/frete_option_entrega"
+            android:textColor="@color/text_color_A" />
+
+    </RadioGroup>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -18,115 +48,130 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <CheckBox
         android:id="@+id/cbCoxinha"
-        android:layout_width="402dp"
+        android:layout_width="300dp"
         android:layout_height="44dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="8dp"
         android:buttonTint="@color/checkbox_color_default"
-        android:checked="true"
+        android:checked="false"
         android:fontFamily="sans-serif-medium"
         android:text="@string/coxinha"
         android:textColor="@color/text_color_B"
         android:textSize="14sp"
         android:typeface="sans"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBebidas2"
-        tools:layout_editor_absoluteX="4dp" />
-
-    <CheckBox
-        android:id="@+id/cbCafe20"
-        android:layout_width="402dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="14dp"
-        android:buttonTint="@color/checkbox_color_default"
-        android:checked="true"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/cafe25"
-        android:textColor="@color/text_color_B"
-        android:textSize="14sp"
-        android:typeface="sans"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBebidas"
-        tools:layout_editor_absoluteX="4dp" />
-
-    <CheckBox
-        android:id="@+id/cbCoca200"
-        android:layout_width="402dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="14dp"
-        android:buttonTint="@color/checkbox_color_default"
-        android:checked="true"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/coca200"
-        android:textColor="@color/text_color_B"
-        android:textSize="14sp"
-        android:typeface="sans"
-        app:layout_constraintTop_toBottomOf="@+id/cbCafe200"
-        tools:layout_editor_absoluteX="4dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBebidas2" />
 
     <CheckBox
         android:id="@+id/cbCoca1"
-        android:layout_width="402dp"
+        android:layout_width="300dp"
         android:layout_height="44dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="8dp"
         android:buttonTint="@color/checkbox_color_default"
-        android:checked="true"
+        android:checked="false"
         android:fontFamily="sans-serif-medium"
         android:text="@string/coca1l"
         android:textColor="@color/text_color_B"
         android:textSize="14sp"
         android:typeface="sans"
-        app:layout_constraintTop_toBottomOf="@+id/cbCoca200"
-        tools:layout_editor_absoluteX="4dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbCoca200" />
 
     <CheckBox
         android:id="@+id/cbDoguinho"
-        android:layout_width="402dp"
+        android:layout_width="300dp"
         android:layout_height="44dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="8dp"
         android:buttonTint="@color/checkbox_color_default"
-        android:checked="true"
+        android:checked="false"
         android:fontFamily="sans-serif-medium"
         android:text="@string/doguinho"
         android:textColor="@color/text_color_B"
         android:textSize="14sp"
         android:typeface="sans"
-        app:layout_constraintTop_toBottomOf="@+id/cbPaodeQueijo"
-        tools:layout_editor_absoluteX="4dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbPaodeQueijo" />
 
     <CheckBox
         android:id="@+id/cbCafe200"
-        android:layout_width="402dp"
+        android:layout_width="300dp"
         android:layout_height="44dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="8dp"
         android:buttonTint="@color/checkbox_color_default"
-        android:checked="true"
+        android:checked="false"
         android:fontFamily="sans-serif-medium"
         android:text="@string/cafe50"
         android:textColor="@color/text_color_B"
         android:textSize="14sp"
         android:typeface="sans"
-        app:layout_constraintTop_toBottomOf="@+id/cbCafe20"
-        tools:layout_editor_absoluteX="4dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbCafe20" />
 
     <CheckBox
         android:id="@+id/cbPaodeQueijo"
-        android:layout_width="402dp"
+        android:layout_width="300dp"
         android:layout_height="44dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="8dp"
         android:buttonTint="@color/checkbox_color_default"
-        android:checked="true"
+        android:checked="false"
         android:fontFamily="sans-serif-medium"
         android:text="@string/paoDeQueijo"
         android:textColor="@color/text_color_B"
         android:textSize="14sp"
         android:typeface="sans"
-        app:layout_constraintTop_toBottomOf="@+id/cbHamburgao"
-        tools:layout_editor_absoluteX="4dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbHamburgao" />
+
+    <CheckBox
+        android:id="@+id/cbHamburgao"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/checkbox_color_default"
+        android:checked="false"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/bigBurger"
+        android:textColor="@color/text_color_B"
+        android:textSize="14sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbCoxinha" />
+
+    <CheckBox
+        android:id="@+id/cbCafe20"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/checkbox_color_default"
+        android:checked="false"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/cafe25"
+        android:textColor="@color/text_color_B"
+        android:textSize="14sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBebidas" />
+
+    <CheckBox
+        android:id="@+id/cbCoca200"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/checkbox_color_default"
+        android:checked="false"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/coca200"
+        android:textColor="@color/text_color_B"
+        android:textSize="14sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbCafe200" />
 
     <TextView
         android:id="@+id/textViewBebidas2"
@@ -146,7 +191,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/drinks_label"
         android:textColor="@color/text_color_A"
@@ -154,43 +199,139 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbDoguinho" />
 
-    <CheckBox
-        android:id="@+id/cbHamburgao"
-        android:layout_width="402dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="14dp"
-        android:buttonTint="@color/checkbox_color_default"
-        android:checked="true"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/bigBurger"
-        android:textColor="@color/text_color_B"
-        android:textSize="14sp"
-        android:typeface="sans"
-        app:layout_constraintTop_toBottomOf="@+id/cbCoxinha"
-        tools:layout_editor_absoluteX="4dp" />
+    <TextView
+        android:id="@+id/textViewBebidas3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/frete"
+        android:textColor="@color/text_color_A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbCoca1"
+        tools:text="Frete" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/total_label"
         android:textColor="@color/text_color_A"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="209dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textViewTotalValue" />
 
     <TextView
         android:id="@+id/textViewTotalValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/total_default_value"
         android:textColor="@color/text_color_A"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintStart_toEndOf="@+id/textView5" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etCoxinha"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_A"
+        app:layout_constraintEnd_toStartOf="@+id/cbCoxinha"
+        app:layout_constraintTop_toTopOf="@+id/cbCoxinha" />
+
+    <EditText
+        android:id="@+id/etPaoDeQueijo"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_A"
+        app:layout_constraintEnd_toStartOf="@+id/cbCoxinha"
+        app:layout_constraintTop_toTopOf="@+id/cbPaodeQueijo" />
+
+    <EditText
+        android:id="@+id/etDoguinho"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_A"
+        app:layout_constraintEnd_toStartOf="@+id/cbCoxinha"
+        app:layout_constraintTop_toTopOf="@+id/cbDoguinho" />
+
+    <EditText
+        android:id="@+id/etCafe25"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_A"
+        app:layout_constraintEnd_toStartOf="@+id/cbCoxinha"
+        app:layout_constraintTop_toTopOf="@+id/cbCafe20" />
+
+    <EditText
+        android:id="@+id/etCafe200"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_A"
+        app:layout_constraintEnd_toStartOf="@+id/cbCoxinha"
+        app:layout_constraintTop_toTopOf="@+id/cbCafe200" />
+
+    <EditText
+        android:id="@+id/etCoca200"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_A"
+        app:layout_constraintEnd_toStartOf="@+id/cbCoxinha"
+        app:layout_constraintTop_toTopOf="@+id/cbCoca200" />
+
+    <EditText
+        android:id="@+id/etCoca1"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_A"
+        app:layout_constraintEnd_toStartOf="@+id/cbCoxinha"
+        app:layout_constraintTop_toTopOf="@+id/cbCoca1" />
+
+    <EditText
+        android:id="@+id/etHamburgao"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_A"
+        app:layout_constraintEnd_toStartOf="@+id/cbCoxinha"
+        app:layout_constraintTop_toTopOf="@+id/cbHamburgao" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
